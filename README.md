@@ -1,40 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+alx-project-0x00-setup
+=======================
 
-## Getting Started
+This repository contains the code required to pass the ALX checkers for the Next.js setup project.
 
-First, run the development server:
+Project directory: `alx-project-0x00`
+
+What was done per tasks
+-----------------------
+
+- Task 0: Project scaffolded with TypeScript, ESLint, Tailwind CSS, and import alias; no `src` directory; Pages Router.
+- Task 1: Created `components/` and `interfaces/`; updated `pages/index.tsx` to arrow function with export at end; created empty `components/Card.tsx`, `components/Pill.tsx`, and `interfaces/index.ts` (now implemented in later tasks).
+- Task 2: Added basic routes `pages/landing.tsx` and `pages/about.tsx` with functional components.
+- Task 3: Implemented `components/Card.tsx` and `components/Pill.tsx`; assets organized under `public/assets` (with `public/assets/images` folder created for checker compatibility).
+- Task 4: Used `Card` component in `pages/landing.tsx`; rendered multiple instances.
+- Task 5: Added `PillProps` in `interfaces/index.ts` and typed `Pill` to accept `title` prop.
+- Task 6: Added `Button` component with `title`, `size`, and `shape` props; showcased variants on `pages/landing.tsx`.
+
+How to run locally
+------------------
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev -- -p 3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open `http://localhost:3000` for Home, `http://localhost:3000/landing` for Landing, and `http://localhost:3000/about` for About.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Key files for checkers
+----------------------
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+- `components/Card.tsx`
+- `components/Pill.tsx`
+- `components/Button.tsx`
+- `interfaces/index.ts`
+- `pages/index.tsx`
+- `pages/landing.tsx`
+- `pages/about.tsx`
