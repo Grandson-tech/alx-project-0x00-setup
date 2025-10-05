@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global resets or base styles (optional) */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
